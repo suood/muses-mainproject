@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+ <classPathEntry  location="/Users/Alexander/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar" />
+  <context id="context1" >
+      <property name="autoDelimitKeywords" value="false"/>
+      <!-- 生成的Java文件的编码 -->
+      <property name="javaFileEncoding" value="UTF-8"/>
+      <!-- 格式化java代码 -->
+      <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+      <!-- 格式化XML代码 -->
+      <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+      <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+            connectionURL="jdbc:mysql://123.57.206.88:3306/yxshop" userId="root" password="*Test2015"/>
+
+
+	<javaTypeResolver>
+  <property name="forceBigDecimals" value="true" />
+</javaTypeResolver>
+    <javaModelGenerator targetPackage="com.muses.data.model" targetProject="/Users/Alexander/ideaspace/muses-mainproject/muses-rest-mapper/src/main/java" >
+        <property name="enableSubPackages" value="false" />
+        <property name="trimStrings" value="false" />
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.muses.data.mapperxml" targetProject="/Users/Alexander/ideaspace/muses-mainproject/muses-rest-mapper/src/main/resources" >
+        <property name="enableSubPackages" value="false" />
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.muses.data.mapper" targetProject="/Users/Alexander/ideaspace/muses-mainproject/muses-rest-mapper/src/main/java" type="XMLMAPPER" >
+        <property name="enableSubPackages" value="false" />
+    </javaClientGenerator>
+
+
+      <!--<table schema="nhshopdb" tableName="nb_banner_favorable"  domainObjectName="BannerFavorable" >-->
+      <!--<property name="useActualColumnNames" value="true"/>-->
+      <!--</table>-->
+      <table schema="yxshop" tableName="t_sms_identifycode" domainObjectName="SmsIdentifyCode">
+          <property name="useActualColumnNames" value="true"/>
+      </table>
+      <!--<table schema="nhshopdb" tableName="nh_accounts" />-->
+      <!--<table schema="nhshopdb" tableName="nh_accounts_main" />-->
+      <!--<table schema="nhshopdb" tableName="nh_advertisement" />-->
+      <!--<table schema="nhshopdb" tableName="nh_appuser" />-->
+      <!--<table schema="nhshopdb" tableName="nh_backgroundpicture" />-->
+      <!--<table schema="nhshopdb" tableName="nh_banner" /-->
+      <!--<table schema="nhshopdb" tableName="nh_qrcode_log" />-->
+
+
+      <!--<table schema="nhshopdb" tableName="nh_banner_favorable" />-->
+      <!--<table schema="nhshopdb" tableName="nh_banner_goods" />-->
+      <!--<table schema="nhshopdb" tableName="nh_banner_special" />-->
+      <!--<table schema="nhshopdb" tableName="nh_brand" />-->
+      <!--<table schema="nhshopdb" tableName="nh_brand_show" />-->
+      <!--<table schema="nhshopdb" tableName="nh_cancellation" />-->
+      <!--<table schema="nhshopdb" tableName="nh_carousel" />-->
+      <!--<table schema="nhshopdb" tableName="nh_carousel_brand" />-->
+      <!--<table schema="nhshopdb" tableName="nh_carousel_goods" />-->
+      <!--<table schema="nhshopdb" tableName="nh_carousel_special" />-->
+      <!--<table schema="nhshopdb" tableName="nh_contract" />-->
+      <!--<table schema="nhshopdb" tableName="nh_coupon" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goods" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goods_ext" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goods_property" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodsactivity" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodscategory" />-->
+      <!--<table schema="nhshopdb" tableName="nh_popular_category" />-->
+
+      <!--<table schema="nhshopdb" tableName="nh_goodscolor" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodsconsult" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodsevaluate" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodsshow" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodssize" />-->
+      <!--<table schema="nhshopdb" tableName="nh_goodssizespec" />-->
+      <!--<table schema="nhshopdb" tableName="nh_hg" />-->
+      <!--<table schema="nhshopdb" tableName="nh_logistic" />-->
+      <!--<table schema="nhshopdb" tableName="nh_logistics" />-->
+      <!--<table schema="nhshopdb" tableName="nh_message" />-->
+      <!--<table schema="nhshopdb" tableName="nh_msgboard" />-->
+      <!--<table schema="nhshopdb" tableName="nh_notice" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_item" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_payinfo" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_return" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_return_detail" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_return_system" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_return_vendor" />-->
+      <!--<table schema="nhshopdb" tableName="nh_order_trace" />-->
+      <!--<table schema="nhshopdb" tableName="nh_orders" />-->
+      <!--<table schema="nhshopdb" tableName="nh_orders_alipay" />-->
+      <!--<table schema="nhshopdb" tableName="nh_orders_photo" />-->
+      <!--<table schema="nhshopdb" tableName="nh_orders_wxpay" />-->
+      <!--<table schema="nhshopdb" tableName="nh_payment" />-->
+      <!--<table schema="nhshopdb" tableName="nh_platformactivity" />-->
+      <!--<table schema="nhshopdb" tableName="nh_point" />-->
+      <!--<table schema="nhshopdb" tableName="nh_pointsrule" />-->
+      <!--<table schema="nhshopdb" tableName="nh_qqinfo" />-->
+      <!--<table schema="nhshopdb" tableName="nh_regioninfo" />-->
+      <!--<table schema="nhshopdb" tableName="nh_renewal" />-->
+      <!--<table schema="nhshopdb" tableName="nh_resource" />-->
+      <!--<table schema="nhshopdb" tableName="nh_salesreturn" />-->
+      <!--<table schema="nhshopdb" tableName="nh_shopping_cart" />-->
+      <!--<table schema="nhshopdb" tableName="nh_sms_identifycode" />-->
+      <!--<table schema="nhshopdb" tableName="nh_spec" />-->
+      <!--<table schema="nhshopdb" tableName="nh_style" />-->
+      <!--<table schema="nhshopdb" tableName="nh_sys_favorable" />-->
+      <!--<table schema="nhshopdb" tableName="nh_useraddress" />-->
+      <!--<table schema="nhshopdb" tableName="nh_userbrowse" />-->
+      <!--<table schema="nhshopdb" tableName="nh_userfavorite" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendor" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendoraccount" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorbasicinfo" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorbrand" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorcategory" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorcomplaint" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorplatformactivity" />-->
+      <!--<table schema="nhshopdb" tableName="nh_vendorviolation" />-->
+      <!--<table schema="nhshopdb" tableName="nh_violation" />-->
+      <!--<table schema="nhshopdb" tableName="nh_weixininfo" />-->
+    <!--<table schema="nhshopdb" tableName="nh_coupon_buyer" />-->
+    <!--<table schema="nhshopdb" tableName="t_s_type" />-->
+    <!--<table schema="nhshopdb" tableName="t_s_typegroup" />-->
+    <!--<table schema="nhshopdb" tableName="nh_link_manage" />-->
+    <!--<table schema="nhshopdb" tableName="nh_channel_manage" />-->
+    <!--<table schema="nhshopdb" tableName="nh_s_bizlog" />-->
+
+
+
+    <!--<table schema="nhshopdb" tableName="nh_coupon_campaigninfo" />-->
+    <!--<table schema="nhshopdb" tableName="nh_coupon" />-->
+    <!--<table schema="nhshopdb" tableName="nh_customer_service_rule" />-->
+    <!--<table schema="nhshopdb" tableName="nh_trading_order" />-->
+    <!--<table schema="nhshopdb" tableName="nh_apk_download" />-->
+    <!--<table schema="nhshopdb" tableName="nh_coupon_exchange_code" />-->
+    <!--<table schema="nhshopdb" tableName="t_s_syscode" />-->
+    <!--<table schema="nhshopdb" tableName="nh_s_iosaccesslog" />-->
+    <!--<table schema="nhshopdb" tableName="nh_s_bizlog_rule" />-->
+      <!--<table schema="nhshopdb" tableName="nh_coupon_fission" />-->
+      <!--<table schema="nhshopdb" tableName="nh_share_fission_rule" />-->
+      <!--<table schema="nhshopdb" tableName="nh_user_gift" />-->
+      <!--<table schema="nhshopdb" tableName="nh_luck_roulette_rule" />-->
+      <!--<table schema="nhshopdb" tableName="nh_navigation" />-->
+      <!--<table schema="nhshopdb" tableName="nh_navigation_column" />-->
+      <!--<table schema="nhshopdb" tableName="nh_navigation_content" />-->
+
+
+      <!--'doc'-->
+      <!--'filter_key'-->
+      <!--'key_reset'-->
+      <!--'newword_idf'-->
+      <!--'newword_tf'-->
+      <!--'sentence'-->
+      <!--'sentence_break_key'-->
+      <!--'sentence_key'-->
+      <!--'test'-->
+      <!--'userwords'-->
+      <!--'word_idf'-->
+      <!--'word_tf'-->
+
+
+  </context>
+</generatorConfiguration>

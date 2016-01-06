@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>muses-mainproject</artifactId>
+        <groupId>com.muses</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>muses-manage-controller</artifactId>
+
+    <properties>
+        <org.springframework.version>4.2.2.RELEASE</org.springframework.version>
+        <org.springframework.security-version>3.2.0.RELEASE</org.springframework.security-version>
+        <org.aspectj-version>1.8.1</org.aspectj-version>
+        <com.fasterxml.jackson.core.version>2.6.3</com.fasterxml.jackson.core.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.muses</groupId>
+            <artifactId>muses-manage-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.2.2.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+</project>
