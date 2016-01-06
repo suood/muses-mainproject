@@ -15,7 +15,7 @@
 	<!--<mvc:view-controller path="/" view-name="home"/>÷-->
 	<!-- 扫描控制器类 -->
 	<!-- jsp视图解析器 -->
-	<context:component-scan base-package="com.muses.web.manage.page.controller">
+	<context:component-scan base-package="com.muses.web.manage.controller">
 		<context:exclude-filter type="annotation"
 								expression="org.springframework.stereotype.Service" />
 	</context:component-scan>
@@ -53,10 +53,10 @@
 		<property name="messageConverters" >
 			<list>
 				<ref bean="mappingJacksonHttpMessageConverter"/>
-				<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
-				<bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
-				<bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
-				<bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+				<!--<bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>-->
+				<!--<bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>-->
+				<!--<bean class="org.springframework.http.converter.FormHttpMessageConverter"/>-->
+				<!--<bean class="org.springframework.http.converter.StringHttpMessageConverter"/>-->
 			</list>
 		</property>
 	</bean>

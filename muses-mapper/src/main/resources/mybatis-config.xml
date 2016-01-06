@@ -44,8 +44,8 @@
     <mappers>
 
 
-        <mapper resource="com/muses/data/mapperxml/BannerFavorableMapper.xml"/>
-        <mapper resource="com/muses/data/mapperxml/BannerMapper.xml"/>
+        <!--<mapper resource="com/muses/data/mapperxml/BannerFavorableMapper.xml"/>-->
+        <!--<mapper resource="com/muses/data/mapperxml/BannerMapper.xml"/>-->
 
 
         <!-- 手写的xml文件 -->
